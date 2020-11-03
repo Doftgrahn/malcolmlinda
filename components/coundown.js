@@ -28,18 +28,17 @@ const CountDown = () => {
         const interval = setInterval(() => {
             const test = contdown();
             setClock(test);
-        }, 1000);
+        }, 10000);
 
         return () => interval;
     }, []);
     return (
-        <Box>
-            <Typography variant='h4'>
-                {' '}
-                {clock.days} dagar {clock.hours} timmar {clock.minutes} minuter{' '}
-                {clock.seconds} sekunder{' '}
+        <>
+            <Typography align='center' variant='h4'>
+                {clock.days}
             </Typography>
-        </Box>
+            <Typography align='center'>Dagar kvar!</Typography>
+        </>
     );
 };
 

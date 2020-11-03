@@ -10,4 +10,17 @@ export default createMuiTheme({
             main: '#BC9087',
         },
     },
+    typography: {
+        fontFamily: 'basictitlefont',
+        h1: { fontFamily: 'bromello' },
+        h2: {
+            fontFamily: 'bromello',
+        },
+        h3: {
+            fontFamily: 'bromello',
+        },
+        h4: {
+            fontFamily: 'bromello',
+        },
+    },
 });

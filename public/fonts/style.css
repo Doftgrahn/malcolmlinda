@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'basictitlefont';
+    src: url('./basictitlefont-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'bromello';
+    src: url('./bromello-regular-webfont.woff') format('woff');
+}

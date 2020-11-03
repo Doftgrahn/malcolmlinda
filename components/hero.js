@@ -1,4 +1,4 @@
-import { Box, Typography } from '@material-ui/core';
+import { Box, Button, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Countdown from './coundown';
@@ -57,9 +57,11 @@ export default function Hero() {
                 <Typography variant='h3' gutterBottom>
                     Malcolm och linda
                 </Typography>
-                <Link href='/osa'>
-                    <a className={classes.link}>OSA</a>
-                </Link>
+                <Button component='div' color='primary' variant='outlined'>
+                    <Link href='/osa'>
+                        <a className={classes.link}>OSA</a>
+                    </Link>
+                </Button>
             </Box>
         </Box>
     );
