@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import { lorem } from '../utils/lorem';
+import { Container } from '@material-ui/core';
 
 const Accordion = withStyles({
     root: {
@@ -31,10 +32,11 @@ const AccordionSummary = withStyles((theme) => ({
     root: {
         display: 'flex',
         position: 'relative',
-        padding: theme.spacing(3),
+        padding: theme.spacing(4),
         marginBottom: -1,
         minHeight: 56,
-
+        background: theme.palette.primary.main,
+        color: '#fff',
         '&$expanded': {
             minHeight: 56,
         },
@@ -49,7 +51,11 @@ const AccordionSummary = withStyles((theme) => ({
 
 const AccordionDetails = withStyles((theme) => ({
     root: {
-        padding: theme.spacing(2),
+        paddingTop: theme.spacing(4),
+        paddingBottom: theme.spacing(4),
+        paddingLeft: theme.spacing(2),
+        paddingRight: theme.spacing(2),
+        background: theme.palette.primary.light,
     },
 }))(MuiAccordionDetails);
 
@@ -61,8 +67,9 @@ const useStyles = makeStyles((theme) => ({
     text: {
         position: 'relative',
         display: 'inline-block',
-        fontSize: theme.typography.pxToRem(15),
+        fontSize: theme.typography.pxToRem(20),
         fontWeight: theme.typography.fontWeightMedium,
+        paddingBottom: '20px',
         '&::after': {
             display: 'block',
             content: '""',
@@ -71,8 +78,11 @@ const useStyles = makeStyles((theme) => ({
             right: 0,
             bottom: 0,
             width: '40px',
-            borderBottom: '2px solid black',
+            borderBottom: '2px solid white',
         },
+    },
+    textWidth: {
+        maxWidth: '1020px',
     },
 }));
 
@@ -91,12 +101,18 @@ const Faq = () => {
     const accordium = faq.map((item, key) => (
         <Accordion key={key}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography className={classes.text}>
-                    {item.question}
-                </Typography>
+                <Container maxWidth='lg' disableGutters>
+                    <Typography className={classes.text}>
+                        {item.question}
+                    </Typography>
+                </Container>
             </AccordionSummary>
             <AccordionDetails>
-                <Typography>{item.answer}</Typography>
+                <Container maxWidth='lg' disableGutters>
+                    <Typography className={classes.textWidth}>
+                        {item.answer}
+                    </Typography>
+                </Container>
             </AccordionDetails>
         </Accordion>
     ));

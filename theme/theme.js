@@ -1,10 +1,13 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import green from '@material-ui/core/colors/green';
-import pink from '@material-ui/core/colors/pink';
 
 export default createMuiTheme({
     palette: {
-        primary: green,
-        secondary: pink,
+        common: { white: '#e7e1dd', black: '#eeeee' },
+        primary: {
+            main: '#899786',
+        },
+        secondary: {
+            main: '#BC9087',
+        },
     },
 });

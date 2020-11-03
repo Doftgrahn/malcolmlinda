@@ -1,6 +1,5 @@
 import { ReactQueryDevtools } from 'react-query-devtools';
 import { QueryCache, ReactQueryCacheProvider } from 'react-query';
-import { ServerStyleSheets } from '@material-ui/core/styles';
 
 const queryCache = new QueryCache();
 

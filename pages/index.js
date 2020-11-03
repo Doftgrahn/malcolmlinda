@@ -20,12 +20,9 @@ export default function Home() {
                 <title>Malcolm linda</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-
-            <Container className={classes.root} disableGutters maxWidth='lg'>
-                <Header />
-                <Hero />
-                <Faq />
-            </Container>
+            <Header />
+            <Hero />
+            <Faq />
         </div>
     );
 }

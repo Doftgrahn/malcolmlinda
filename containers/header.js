@@ -9,17 +9,12 @@ import Drawer from '@material-ui/core/Drawer';
 
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
-import InboxIcon from '@material-ui/icons/Inbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
 
 const links = [
-    { to: '/', label: 'hem' },
-    { to: '/spex', label: 'tal/spex' },
-    { to: '/osa', label: 'osa' },
-    { to: '/samkorning', label: 'samkorning' },
+    { to: '/', label: 'Hem' },
+    { to: '/spex', label: 'Tal/Spex' },
+    { to: '/osa', label: 'OSA' },
+    { to: '/samkorning', label: 'Samkörning' },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -41,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function Home() {
+export default function Header() {
     const classes = useStyles();
     const [state, setState] = React.useState(false);
 
@@ -51,7 +46,7 @@ export default function Home() {
 
     const navlinks = links.map((link, key) => (
         <Link key={key} href={link.to}>
-            <ListItem button component={'a'}>
+            <ListItem button component={'a'} onClick={() => setState(false)}>
                 {link.label}
             </ListItem>
         </Link>
