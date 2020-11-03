@@ -1,7 +1,7 @@
-import { Box, Button, Typography } from '@material-ui/core';
-import Head from 'next/head';
+import { Box, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
+import Countdown from './coundown';
 import Link from 'next/link';
 
 const useStyles = makeStyles((theme) => ({
@@ -33,6 +33,14 @@ const useStyles = makeStyles((theme) => ({
         zIndex: '-1',
         opacity: '0.6',
     },
+    link: {
+        color: theme.palette.common.white,
+        fontSize: theme.spacing(8),
+        textDecoration: 'none',
+        '&:hover': {
+            textDecoration: 'underline',
+        },
+    },
 }));
 
 export default function Hero() {
@@ -45,14 +53,12 @@ export default function Hero() {
                 src='https://images.unsplash.com/photo-1600655584427-65c6ebfca603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3302&q=80'
             />
             <Box className={classes.containertest}>
-                <Typography variant='h6' gutterBottom>
-                    1992-02-23
-                </Typography>
+                <Countdown />
                 <Typography variant='h3' gutterBottom>
                     Malcolm och linda
                 </Typography>
                 <Link href='/osa'>
-                    <a>OSA</a>
+                    <a className={classes.link}>OSA</a>
                 </Link>
             </Box>
         </Box>
