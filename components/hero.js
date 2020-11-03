@@ -52,7 +52,7 @@ export default function Hero() {
                     Malcolm och linda
                 </Typography>
                 <Link href='/osa'>
-                    <span>OSA</span>
+                    <a>OSA</a>
                 </Link>
             </Box>
         </Box>
