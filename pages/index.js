@@ -9,7 +9,7 @@ import Footer from '../containers/footer';
 
 const useStyles = makeStyles({
     root: {
-        height: '100vh',
+        minHeight: '100vh',
     },
 });
 

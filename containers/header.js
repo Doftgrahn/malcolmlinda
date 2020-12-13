@@ -35,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
             },
         },
     },
+    icon : {
+        color:theme.palette.common.white
+            }
 }));
 
 export default function Header() {
@@ -61,7 +64,9 @@ export default function Header() {
                         onClick={toggleDrawer(true)}
                         edge='end'
                         aria-label='menu'
-                        color="white">
+                        className={classes.icon}
+                        >
+
                         <MenuIcon color="white"/>
                     </IconButton>
                     <Drawer

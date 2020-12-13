@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import { lorem } from '../utils/lorem';
-import { Container, Box } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 
 const Accordion = withStyles({
     root: {
@@ -32,7 +32,7 @@ const AccordionSummary = withStyles((theme) => ({
     root: {
         display: 'flex',
         position: 'relative',
-        //marginBottom: -1,
+        marginBottom: -1,
         height: 80,
         background: theme.palette.primary.main,
         color: '#fff',
@@ -45,7 +45,7 @@ const AccordionSummary = withStyles((theme) => ({
     },
     content: {
         '&$expanded': {
-           // margin: '12px 0',
+           //margin: '12px 0',
         },
     },
     expanded: {},
@@ -73,6 +73,9 @@ const useStyles = makeStyles((theme) => ({
     },
     textWidth: {
         maxWidth: '1020px',
+    },
+    icon : {
+color:theme.palette.common.white
     }
 }));
 
@@ -90,7 +93,7 @@ const Faq = () => {
 
     const accordium = faq.map((item, key) => (
         <Accordion key={key}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon color="white"/>}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon className={classes.icon} />}>
                 <Container maxWidth='md' disableGutters>
                     <Typography className={classes.text}>
                         {item.question}
