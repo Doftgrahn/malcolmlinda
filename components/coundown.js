@@ -1,7 +1,29 @@
-import { Box, Typography } from '@material-ui/core';
+import { Box, Typography, CircularProgress } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    counter: {
+        background: theme.palette.secondary.light,
+        minHeight: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderColor: theme.palette.secondary.main,
+        borderStyle: "solid",
+        borderWidth: '15px',
+        padding: '40px'
+    },
+    color: {
+        color: theme.palette.secondary.main,
+        marginBottom: theme.spacing(2)
+    }
+}));
 
 const CountDown = () => {
+    const classes = useStyles();
+
     const [clock, setClock] = useState({
         days: null,
         hours: null,
@@ -13,7 +35,7 @@ const CountDown = () => {
         var now = new Date().getTime();
 
         // Find the distance between now and the count down date
-        const countDownDate = new Date('Jul 22, 2021 15:37:25').getTime();
+        const countDownDate = new Date('Jul 24, 2021 15:37:25').getTime();
         var distance = countDownDate - now;
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor(
@@ -32,13 +54,18 @@ const CountDown = () => {
 
         return () => interval;
     }, []);
+
     return (
-        <>
-            <Typography align='center' variant='h4'>
+        <div className={classes.counter}>
+        
+        { !clock?.days ? <CircularProgress disableShrink className={classes.color} /> : '' }
+
+            <Typography align='center' variant='h2'>
                 {clock.days}
             </Typography>
-            <Typography align='center'>Dagar kvar!</Typography>
-        </>
+            
+            <Typography align='center' variant='h4'>Dagar kvar</Typography>
+        </div>
     );
 };
 

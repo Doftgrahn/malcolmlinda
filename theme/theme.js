@@ -11,7 +11,7 @@ export default createMuiTheme({
         },
     },
     typography: {
-        fontFamily: 'basictitlefont',
+        fontFamily: 'Old Standard TT',
         h1: { fontFamily: 'bromello' },
         h2: {
             fontFamily: 'bromello',
@@ -20,7 +20,7 @@ export default createMuiTheme({
             fontFamily: 'bromello',
         },
         h4: {
-            fontFamily: 'bromello',
+            fontFamily: 'basictitlefont',
         },
     },
 });

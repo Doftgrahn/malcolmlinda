@@ -4,6 +4,8 @@ import Header from '../containers/header';
 import Hero from '../components/hero';
 import Faq from '../containers/faq';
 import Content from '../containers/content';
+import Spotify from '../containers/spotify';
+import Footer from '../containers/footer';
 
 const useStyles = makeStyles({
     root: {
@@ -17,13 +19,15 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Malcolm linda</title>
+                <title>Linda & Malcolm</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <Header />
             <Hero />
             <Content />
             <Faq />
+            <Spotify />
+            <Footer />
         </div>
     );
 }

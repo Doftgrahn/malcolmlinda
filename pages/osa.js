@@ -1,4 +1,4 @@
-import { Box, Button, Paper, TextField, Typography } from '@material-ui/core';
+import { Box, Button, Container, Paper, TextField, Typography } from '@material-ui/core';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { makeStyles } from '@material-ui/core/styles';
@@ -6,15 +6,14 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         background: theme.palette.primary.main,
-        width: '100%',
         height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignContent: 'center',
         flexDirection: 'column',
-        padding: theme.spacing(0),
+        padding: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
-            padding: theme.spacing(60),
+            padding: theme.spacing(10),
         },
     },
     wrapper: {
@@ -35,14 +34,15 @@ const Osa = (props) => {
     };
 
     return (
-        <Box className={classes.root}>
+        <Container className={classes.root}>
+        <Box >
             <Paper>
                 <Box
                     className={classes.wrapper}
                     display='flex'
                     flexDirection='column'>
-                    <Typography align='center' gutterBottom variant='h4'>
-                        OSA här!
+                    <Typography align='center' gutterBottom variant='h2'>
+                        Hoppas ni kan komma!
                     </Typography>
                     <TextField
                         inputRef={register({ required: true })}
@@ -85,6 +85,7 @@ const Osa = (props) => {
                 </Box>
             </Paper>
         </Box>
+        </Container>
     );
 };
 

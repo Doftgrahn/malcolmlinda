@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     root: {},
     menuButton: {
         marginRight: theme.spacing(2),
+        color:'white'
     },
     toolbar: {
         display: 'flex',
@@ -59,8 +60,9 @@ export default function Header() {
                     <IconButton
                         onClick={toggleDrawer(true)}
                         edge='end'
-                        aria-label='menu'>
-                        <MenuIcon />
+                        aria-label='menu'
+                        color="white">
+                        <MenuIcon color="white"/>
                     </IconButton>
                     <Drawer
                         className={classes.drawer}

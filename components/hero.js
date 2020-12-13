@@ -7,7 +7,7 @@ import Link from 'next/link';
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
-        height: '100vh',
+        height: '80vh',
         background: theme.palette.primary.main,
         display: 'flex',
         justifyContent: 'center',
@@ -35,10 +35,10 @@ const useStyles = makeStyles((theme) => ({
     },
     link: {
         color: theme.palette.common.white,
-        fontSize: theme.spacing(8),
+        fontSize: '20px',
         textDecoration: 'none',
         '&:hover': {
-            textDecoration: 'underline',
+            textDecoration: 'none',
         },
     },
 }));
@@ -53,11 +53,11 @@ export default function Hero() {
                 src='https://images.unsplash.com/photo-1600655584427-65c6ebfca603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3302&q=80'
             />
             <Box className={classes.containertest}>
-                <Countdown />
-                <Typography variant='h3' gutterBottom>
-                    Malcolm och linda
+                <Typography variant="h5" gutterBottom>24 Juli, 2021</Typography>
+                <Typography variant='h1' align="center">
+                    Linda och Malcom
                 </Typography>
-                <Button component='div' color='primary' variant='outlined'>
+                <Button component='div' color='primary' variant='contained'>
                     <Link href='/osa'>
                         <a className={classes.link}>OSA</a>
                     </Link>
