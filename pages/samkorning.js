@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Samkorning = () => {
-    return <div>oko</div>;
+    return <div>Här lägger vi till ett formulär.</div>;
 };
 
 export default Samkorning;

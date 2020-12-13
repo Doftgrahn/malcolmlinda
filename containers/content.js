@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const Content = () => {
+const Content = ({days}) => {
     const classes = useStyles();
 
     return (
@@ -65,7 +65,7 @@ const Content = () => {
                         </div>
                     </Grid>
                     <Grid item md={6} xs={12}>
-                        <Countdown />
+                        <Countdown days={days} />
                     </Grid>
                 </Grid>
             </Box>
@@ -132,6 +132,7 @@ const Content = () => {
                     </Grid>
                 </Grid>
             </Box>
+
         </Container>
     );
 };
