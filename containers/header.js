@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     drawer: {
         '& .MuiDrawer-paperAnchorRight': {
             width: '100%',
+            fontSize: '1rem',
             [theme.breakpoints.up('sm')]: {
                 width: '500px',
             },
@@ -67,7 +68,7 @@ export default function Header() {
                         className={classes.icon}
                         >
 
-                        <MenuIcon color="white"/>
+                        <MenuIcon />
                     </IconButton>
                     <Drawer
                         className={classes.drawer}

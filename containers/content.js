@@ -24,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
         padding: '20px'
     },
     button: {
-        color: 'white'
+        color: 'white',
+        textDecoration: 'none'
     }
 }));
 
@@ -60,7 +61,7 @@ const Content = ({days}) => {
                         <div className={classes.imageWrapper}>
                             <img
                                 className={classes.image}
-                                src='https://images.unsplash.com/photo-1600655584427-65c6ebfca603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3302&q=80'
+                                src='/images/ski.jpg'
                             />
                         </div>
                     </Grid>
@@ -98,7 +99,7 @@ const Content = ({days}) => {
                         <div className={classes.imageWrapper}>
                             <img
                                 className={classes.image}
-                                src='https://images.unsplash.com/photo-1600655584427-65c6ebfca603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3302&q=80'
+                                src='/images/rum.JPG'
                             />
                         </div>
                     </Grid>
@@ -107,7 +108,7 @@ const Content = ({days}) => {
                         <Typography gutterBottom>Integer pharetra, felis quis sodales laoreet, ligula lectus suscipit enim, id consequat dolor turpis vestibulum massa. Cras interdum nunc at efficitur faucibus.</Typography>
                         <Button component='div' color='primary' variant='contained' >
                             <Link href='#' className={classes.button}>
-                                <a className={classes.link}>Mer info</a>
+                                <span className={classes.link}>Mer info</span>
                             </Link>
                         </Button>
                     </Grid>
@@ -118,7 +119,7 @@ const Content = ({days}) => {
                         <Typography gutterBottom>Integer pharetra, felis quis sodales laoreet, ligula lectus suscipit enim, id consequat dolor turpis vestibulum massa. Cras interdum nunc at efficitur faucibus.</Typography> 
                         <Button component='div' color='primary' variant='contained' >
                             <Link href='#' className={classes.button}>
-                                <a className={classes.link}>Mer info</a>
+                                <span className={classes.link}>Mer info</span>
                             </Link>
                         </Button>
                     </Grid>

@@ -35,13 +35,9 @@ const CountDown = ({days}) => {
 
     return (
         <div className={classes.counter}>
-        
-    
-
             <Typography align='center' variant='h2'>
                 {days}
             </Typography>
-            
             <Typography align='center' variant='h4'>Dagar kvar</Typography>
         </div>
     );

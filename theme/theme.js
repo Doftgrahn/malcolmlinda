@@ -4,7 +4,7 @@ export default createMuiTheme({
     palette: {
         common: { white: '#e7e1dd', black: '#eeeee' },
         primary: {
-            main: '#899786',
+            main: '#4f5747',
         },
         secondary: {
             main: '#BC9087',
@@ -12,6 +12,7 @@ export default createMuiTheme({
     },
     typography: {
         fontFamily: 'Old Standard TT',
+        body1: {fontSize: '20px'},
         h1: { fontFamily: 'bromello' },
         h2: {
             fontFamily: 'bromello',
@@ -21,6 +22,17 @@ export default createMuiTheme({
         },
         h4: {
             fontFamily: 'basictitlefont',
-        },
+        },     
     },
+    overrides: {
+        MuiButton: {
+            root: {
+                textTransform: 'none',
+                fontSize: '1rem',
+                padding: '1rem 1.4rem',
+                lineHeight: '1',
+                color: '#fff'
+            }
+        }
+    }
 });

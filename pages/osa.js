@@ -22,6 +22,11 @@ const useStyles = makeStyles((theme) => ({
             padding: theme.spacing(20),
         },
     },
+    button: {
+        color: '#fff',
+        display: 'inlineBlock',
+        width: 'auto'
+    }
 }));
 
 const Osa = (props) => {
@@ -34,7 +39,8 @@ const Osa = (props) => {
     };
 
     return (
-        <Container className={classes.root}>
+        <div className={classes.root}>
+        <Container >
         <Box >
             <Paper>
                 <Box
@@ -74,18 +80,20 @@ const Osa = (props) => {
                     />
                     <Box pt={1} width='100%'>
                         <Button
+                            className={classes.button}
                             fullWidth
                             onClick={handleSubmit(onSubmit)}
                             type='submit'
                             variant='contained'
                             color='secondary'>
-                            Jag skall komma
+                            Klart jag kommer!
                         </Button>
                     </Box>
                 </Box>
             </Paper>
         </Box>
         </Container>
+        </div>
     );
 };
 
