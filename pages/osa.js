@@ -1,7 +1,11 @@
 import { Box, Button, Container, Paper, TextField, Typography } from '@material-ui/core';
+import axios from 'axios'
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { makeStyles } from '@material-ui/core/styles';
+
+
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,8 +38,10 @@ const Osa = (props) => {
 
     const { register, handleSubmit, errors } = useForm();
 
-    const onSubmit = (data) => {
+    const onSubmit = async (data) => {
         console.log('data', data);
+        const test = await axios.post('api/sheets', data)
+console.log('sheets',test)
     };
 
     return (
