@@ -35,7 +35,8 @@ const appendSpreadsheet = async (row) => {
   
       
       const sheet = doc.sheetsById[SHEET_ID];
-      const result = await sheet.addRow(row);
+     await sheet.addRow(row);
+      
     } catch (e) {
       console.error('Error: ', e);
     }
@@ -48,9 +49,13 @@ export default async (req, res) => {
     const data = req.body 
    
 
-     const newRow = { Name: data.name, Allergies: data.alllergies ,SpecificWishes:data.specific };
+    try {
 
-
-    appendSpreadsheet(newRow);
-    res.send('Success');
+        const newRow = { Name: data.name, Allergies: data.alllergies ,SpecificWishes:data.specific };
+       appendSpreadsheet(newRow);
+       res.send('Success');
+    }
+    catch(e) {
+        res.status(404).send('fail')
+    }
 };
