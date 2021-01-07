@@ -50,7 +50,7 @@ export default async (req, res) => {
     try {
 
         const newRow = { Name: data.name, Allergies: data.alllergies ,SpecificWishes:data.specific };
-     appendSpreadsheet(newRow);
+     await appendSpreadsheet(newRow);
        res.send('sucess');
     }
     catch(e) {
