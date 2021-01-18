@@ -5,14 +5,12 @@ import { withStyles } from '@material-ui/core/styles';
 import MuiAccordion from '@material-ui/core/Accordion';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import { Link, Typography, Container} from '@material-ui/core';
 
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import { lorem } from '../utils/lorem';
-import { Container } from '@material-ui/core';
 
 const Accordion = withStyles({
     root: {
@@ -80,34 +78,39 @@ const useStyles = makeStyles((theme) => ({
     },
     icon : {
         color:theme.palette.common.white
-    }
+    },
+    header: {
+        background: theme.palette.primary.lighter,
+        paddingTop: '20px',
+        paddingBottom: '20px'
+    }   
 }));
 
 const faq = [
     { 
         question: 'Toastmaster och toastmadame', 
-        answer: <p>
+        answer: <Typography>
         Ansvariga för middagen festen är vår toastmaster och toastmadame Erik Jönsson och Hanna Molin. <br/>
         Erik är en gammal barndomsvän till Malcolm som för närvarande bor och jobbar i Oslo. Hanna är som Linda från Östersund och de har känt varandra sedan högstadiet.
         <br/>
         <br/>
-        Det är toastmastern/toastmadamen som kommer hålla i själva middagen och planera in eventuella tal och spex och dem ni skall vända er till med frågor om detta. För att komma i kontakt med dem mailar ni <Link href="mailto:toastlindamalcolm@gmail.com" color="inherit" underline='always'>toastlindamalcolm@gmail.com</Link></p> 
+        Det är toastmastern/toastmadamen som kommer hålla i själva middagen och planera in eventuella tal och spex och dem ni skall vända er till med frågor om detta. För att komma i kontakt med dem mailar ni <Link href="mailto:toastlindamalcolm@gmail.com" color="inherit" underline='always'>toastlindamalcolm@gmail.com</Link></Typography> 
     },
     { 
         question: 'Barn', 
-        answer: <p>Bröllopet och framför allt festen är till för att fira vår stora dag tillsammans med vänner och familj. Denna kväll är därför för oss vuxna men skulle det finnas ammande spädbarn är de självklart välkomna.</p> 
+        answer: <Typography>Bröllopet och framför allt festen är till för att fira vår stora dag tillsammans med vänner och familj. Denna kväll är därför för oss vuxna men skulle det finnas ammande spädbarn är de självklart välkomna.</Typography> 
     },
     {
         question: 'Klädkod',
-        answer: <p>Klädkoden för bröllopet är satt till kostym. Detta innebär att herrar bär skjorta med kavaj av valfri färg, byxor kan men behöver inte vara i samma färg som kavajen. Damerna bär klänning, kjol eller byxor med kavaj.</p>
+        answer: <Typography>Klädkoden för bröllopet är satt till kostym. Detta innebär att herrar bär skjorta med kavaj av valfri färg, byxor kan men behöver inte vara i samma färg som kavajen. Damerna bär klänning, kjol eller byxor med kavaj.</Typography>
     },{
         question: 'Kyrka',
-        answer: <p>Vigseln kommer ske i Myssjö kyrka med utsikt över Storsjön. Kyrkan är församlingskyrka i Oviken-Myssjö församling i Härnösands stift. Kyrkan byggdes troligen på 1300-talet.<br/>
-        Vigseln kommer äga rum klockan 14:00 lördag 24/7 och kommer hållas av prästen Thomas Karlsson. Thomas är hemmahörande i Onsala där Malcolm kommer ifrån och är vän till familjen.</p>
+        answer: <Typography>Vigseln kommer ske i Myssjö kyrka med utsikt över Storsjön. Kyrkan är församlingskyrka i Oviken-Myssjö församling i Härnösands stift. Kyrkan byggdes troligen på 1300-talet.<br/>
+        Vigseln kommer äga rum klockan 14:00 lördag 24/7 och kommer hållas av prästen Thomas Karlsson. Thomas är hemmahörande i Onsala där Malcolm kommer ifrån och är vän till familjen.</Typography>
     },
     { 
         question: 'Boende', 
-        answer: <p>
+        answer: <Typography>
             Med utsikt över Storsjön och gröna ängar ligger Wikners i Persåsen. De är ett lite mindre familjeägt hotell och vandrarhem mitt bland Oviksfjällen. 
             Du bokar själv boende genom att kontakta Wikners i Persåsen, därmed väljer du själv hur länge du önskar bo på anläggningen. Samtliga gäster kommer ha möjlighet att bo på anläggningen där bröllopsfesten kommer hållas. För att detta ska vara möjligt så måste stugorna fyllas utefter hur många bäddar som finns där. Därför uppmanar vi er att para ihop er med personer ni känner och kan tänka er bo med så alla bäddar kan fyllas.<br/><br/>
 
@@ -115,26 +118,26 @@ const faq = [
 
             Wikners i Persåsen är ett hotell och vandrarhem som är anslutet till Svenska turistföreningen (STF) och medlemmar kan boka boende med rabatterade priser.
             <Link href="http://www.persasen.se/wordpress/boende/" color="inherit" underline='always'>Läs mer på Persåsen.se</Link>
-        </p>
+        </Typography>
     },
     { 
         question: 'Att göra i närheten', 
         answer: <> 
-            <p> I närheten av Wikners i Persåsen ligger jämtlandsfjällen med många vandrings- och cykelleder  längs fäbodar och fiskevatten. Strax öster om anläggningen ligger Storsjön. För mer idéer kring aktiviteter går det att läsa vidare på:</p>
+            <Typography> I närheten av Wikners i Persåsen ligger jämtlandsfjällen med många vandrings- och cykelleder  längs fäbodar och fiskevatten. Strax öster om anläggningen ligger Storsjön. För mer idéer kring aktiviteter går det att läsa vidare på:</Typography>
 
             <Link href="http://www.persasen.se/wordpress/upplevelser-mat/weekendpaket/ " color="inherit">Persgårdens weekendpaket</Link><br/>
             <Link href="https://visitostersund.se/" color="inherit" underline='always'>Visit Östersund</Link>
         
-            <p>Helgen efter bröllopshelgen kommer det i Östersund vara den stora festivalen Storsjöyran med livekonserter och andra aktiviteter. Under veckan kommer det även vara massa musik och olika aktiviteter kopplade till <Link href="https://yran.se/" underline='always' color='inherit'>Yran</Link>. </p>
+            <Typography>Helgen efter bröllopshelgen kommer det i Östersund vara den stora festivalen Storsjöyran med livekonserter och andra aktiviteter. Under veckan kommer det även vara massa musik och olika aktiviteter kopplade till <Link href="https://yran.se/" underline='always' color='inherit'>Yran</Link>. </Typography>
         </> 
     },
     { 
         question: 'Covid-19', 
-        answer: <p>Vi följer folkhälsomyndighetens rekommendationer och vår förhoppning är att läget kommer ha lugnat sig till bröllopsdagen. Kontinuerliga uppdateringar kring bröllopet kommer meddelas på hemsidan, så ta förvarna att kolla in här med jämna mellanrum.</p> 
+        answer: <Typography>Vi följer folkhälsomyndighetens rekommendationer och vår förhoppning är att läget kommer ha lugnat sig till bröllopsdagen. Kontinuerliga uppdateringar kring bröllopet kommer meddelas på hemsidan, så ta förvarna att kolla in här med jämna mellanrum.</Typography> 
     },
     { 
         question: 'Kontakt uppgifter till oss', 
-        answer: <p>Vill ni kontakta Linda eller Malcolm görs detta på enklast enligt nedan:<br/>
+        answer: <Typography>Vill ni kontakta Linda eller Malcolm görs detta på enklast enligt nedan:<br/>
         <br/>
         Linda Antonsson<br/>
         070 615 43 13<br/>
@@ -146,7 +149,7 @@ const faq = [
         <br/>
         Sturegatan 1<br/>
         753 14 UPPSALA
-        </p> 
+        </Typography> 
     }
 ];
 
@@ -164,15 +167,16 @@ const Faq = () => {
             </AccordionSummary>
             <AccordionDetails>
                 <Container maxWidth='md'>
-                    <Typography className={classes.textWidth}>
+                    <div className={classes.textWidth}>
                         {item.answer}
-                    </Typography>
+                    </div>
                 </Container>
             </AccordionDetails>
         </Accordion>
     ));
 
-    return <div className={classes.root} pt={6}> <Typography variant='h3' align='center' pt={6} gutterBottom>Bra att veta</Typography>{accordium}</div>;
+    return <div className={classes.root} pt={6}> <div className={classes.header} pt={2} pb={2}><Container maxWidth="md" >
+    <Typography variant='h5' align='center' >Lite bra att ha info</Typography></Container></div>{accordium}</div>;
 };
 
 export default Faq;

@@ -1,4 +1,11 @@
-import { Box, Button, Link, Grid, Typography, Container} from '@material-ui/core';
+import {
+    Box,
+    Button,
+    Link,
+    Grid,
+    Typography,
+    Container,
+} from '@material-ui/core';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -8,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     imageWrapper: {
         width: '100%',
         position: 'relative',
-        display:'block',
-        paddingBottom: '100%'
+        display: 'block',
+        paddingBottom: '100%',
     },
     image: {
         position: 'absolute',
@@ -21,26 +28,32 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
     },
     textBox: {
-        padding: '20px'
+        padding: '20px',
     },
     button: {
         color: 'white',
-        textDecoration: 'none'
-    }
+        textDecoration: 'none',
+    },
 }));
 
-const Content = ({days}) => {
+const Content = ({ days }) => {
     const classes = useStyles();
 
     return (
-        <Container maxWidth="md">
+        <Container maxWidth='md'>
             <Box pt={8}>
-                <Typography align='center' variant='h2' gutterBottom>Kul att ni hittade hit!</Typography>
+                <Typography align='center' variant='h2' gutterBottom>
+                    Kul att ni hittade hit!
+                </Typography>
                 <Typography align='center'>
-                    Välkomna till Hargantsson.se!<br/>
-
-                    Sidan som ger Dig rykande het information om Jämtlands och möjligtvis Sveriges största happening 2021! Linda och Malcolms bröl-lopp!<br/>
-                    Här kommer du hitta information som om hur, när, var Malcolm får sin Linda eller om Linda får sin Malcolm. 
+                    Välkomna till Hargantsson.se!
+                    <br />
+                    Sidan som ger Dig rykande het information om Jämtlands och
+                    möjligtvis Sveriges största happening 2021! Linda och
+                    Malcolms bröl-lopp!
+                    <br />
+                    Här kommer du hitta information som om hur, när, var Malcolm
+                    får sin Linda eller om Linda får sin Malcolm.
                 </Typography>
             </Box>
 
@@ -66,11 +79,18 @@ const Content = ({days}) => {
                     Festligt
                 </Typography>
                 <Typography align='center'>
-                Bröllopsfesten kommer hållas på Wikners i Persåsen. Där kommer vi bjuda på fördrink följt av bröllopsmiddag med jämtländska råvaror. Vi kommer bjuda på dryck till middagen och en bar kommer även finnas tillgänglig under kvällen där den som önskar kommer kunna köpa ytterligare förfriskningar.<br/>
-Om du önskar att hålla tal/spex så ska detta anmälas till toastmaster Erik Jönsson och toastmadame Hanna Molin. Du når dem på mail: toastlindamalcolm@gmail.com<br/>
-
-Efter middagen kommer fest att hållas i lokalerna. Baren kommer vara öppen till kl. 02:00.
-
+                    Bröllopsfesten kommer hållas på Wikners i Persåsen. Där
+                    kommer vi bjuda på fördrink följt av bröllopsmiddag med
+                    jämtländska råvaror. Vi kommer bjuda på dryck till middagen
+                    och en bar kommer även finnas tillgänglig under kvällen där
+                    den som önskar kommer kunna köpa ytterligare förfriskningar.
+                    <br />
+                    Om du önskar att hålla tal/spex så ska detta anmälas till
+                    toastmaster Erik Jönsson och toastmadame Hanna Molin. Du når
+                    dem på mail: toastlindamalcolm@gmail.com
+                    <br />
+                    Efter middagen kommer fest att hållas i lokalerna. Baren
+                    kommer vara öppen till kl. 02:00.
                 </Typography>
             </Box>
 
@@ -125,7 +145,6 @@ Vigseln kommer äga rum klockan 14:00 lördag 24/7 och kommer hållas av präste
                     </Grid>
                 </Grid>
             </Box> */}
-
         </Container>
     );
 };

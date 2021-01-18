@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default function Home({days}) {
+export default function Home({ days }) {
     const classes = useStyles();
     return (
         <div>
@@ -31,11 +31,7 @@ export default function Home({days}) {
     );
 }
 
-
-
-
 export async function getStaticProps() {
-
     const contdown = () => {
         var now = new Date().getTime();
 
@@ -51,10 +47,8 @@ export async function getStaticProps() {
         return { days, hours, minutes, seconds };
     };
 
+    const date = contdown();
 
-
-    const date = contdown()
-  
-    const days = date.days
-    return { props: { days } }
-  }
+    const days = date.days;
+    return { props: { days } };
+}

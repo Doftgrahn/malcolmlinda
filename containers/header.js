@@ -14,7 +14,6 @@ const links = [
     { to: '/', label: 'Hem' },
     { to: '/spex', label: 'Tal/Spex' },
     { to: '/osa', label: 'OSA' },
-    { to: '/samkorning', label: 'Samkörning' },
 ];
 
 const useStyles = makeStyles((theme) => ({
