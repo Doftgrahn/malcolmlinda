@@ -35,8 +35,7 @@ const Content = ({days}) => {
     return (
         <Container maxWidth="md">
             <Box pt={8}>
-                <Typography align='center' variant='h2' gutterBottom>
-Kul att ni hittade hit!                </Typography>
+                <Typography align='center' variant='h2' gutterBottom>Kul att ni hittade hit!</Typography>
                 <Typography align='center'>
                     Välkomna till Hargantsson.se!<br/>
 

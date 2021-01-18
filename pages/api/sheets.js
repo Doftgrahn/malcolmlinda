@@ -41,7 +41,7 @@ const appendSpreadsheet = async (row) => {
   };
 
 
-getSheets = () => {
+const getSheets = () => {
   try {
     await doc.useServiceAccountAuth({
       client_email: "wedding@lindamalcolm.iam.gserviceaccount.com",
