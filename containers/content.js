@@ -36,21 +36,12 @@ const Content = ({days}) => {
         <Container maxWidth="md">
             <Box pt={8}>
                 <Typography align='center' variant='h2' gutterBottom>
-                    Type Something
-                </Typography>
+Kul att ni hittade hit!                </Typography>
                 <Typography align='center'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Maecenas fringilla elementum hendrerit. Vestibulum ante
-                    ipsum primis in faucibus orci luctus et ultrices posuere
-                    cubilia curae; Sed id rhoncus arcu. Nullam magna nibh,
-                    imperdiet nec velit eu, tincidunt gravida est. Maecenas
-                    tincidunt, metus et cursus aliquam, arcu urna iaculis enim,
-                    ac posuere tellus quam eu tortor. Proin mollis pulvinar
-                    ligula et mattis. Vivamus sed odio urna. Aliquam in metus
-                    porttitor, varius mauris sed, auctor augue. Mauris molestie
-                    tellus eget ipsum volutpat, at malesuada lectus pharetra.
-                    Praesent dictum tortor eu gravida pulvinar. Vivamus ac nisl
-                    ac mi sodales venenatis.
+                    Välkomna till Hargantsson.se!<br/>
+
+                    Sidan som ger Dig rykande het information om Jämtlands och möjligtvis Sveriges största happening 2021! Linda och Malcolms bröl-lopp!<br/>
+                    Här kommer du hitta information som om hur, när, var Malcolm får sin Linda eller om Linda får sin Malcolm. 
                 </Typography>
             </Box>
 
@@ -73,29 +64,20 @@ const Content = ({days}) => {
 
             <Box pt={8}>
                 <Typography variant='h3' align='center' gutterBottom>
-                    Type Something
+                    Festligt
                 </Typography>
                 <Typography align='center'>
-                    Integer pharetra, felis quis sodales laoreet, ligula lectus
-                    suscipit enim, id consequat dolor turpis vestibulum massa.
-                    Cras interdum nunc at efficitur faucibus. Phasellus velit
-                    purus, varius sit amet metus a, tristique egestas tellus.
-                    Morbi magna mi, feugiat at quam eget, rutrum placerat metus.
-                    Etiam ut sem vitae nisl egestas consequat. Suspendisse
-                    vehicula, enim at feugiat mattis, ligula quam tincidunt
-                    orci, id varius elit sapien quis lorem. Aenean at nulla
-                    consectetur, cursus neque non, euismod risus. Phasellus
-                    feugiat justo a lacus imperdiet, ut faucibus metus
-                    fermentum. Sed vel viverra ligula, varius suscipit sem. Sed
-                    sit amet rutrum lectus, facilisis porttitor arcu.
-                    Suspendisse sed dictum magna. Sed vestibulum dapibus mauris.
-                    Donec volutpat ex a fermentum accumsan.
+                Bröllopsfesten kommer hållas på Wikners i Persåsen. Där kommer vi bjuda på fördrink följt av bröllopsmiddag med jämtländska råvaror. Vi kommer bjuda på dryck till middagen och en bar kommer även finnas tillgänglig under kvällen där den som önskar kommer kunna köpa ytterligare förfriskningar.<br/>
+Om du önskar att hålla tal/spex så ska detta anmälas till toastmaster Erik Jönsson och toastmadame Hanna Molin. Du når dem på mail: toastlindamalcolm@gmail.com<br/>
+
+Efter middagen kommer fest att hållas i lokalerna. Baren kommer vara öppen till kl. 02:00.
+
                 </Typography>
             </Box>
 
-            <Box pt={6}>
+            {/* <Box pt={6}>
                 <Grid container alignItems="center" justify="center" pt={2}>
-                    <Grid item md={6} xs={12}>
+                    <Grid item md={4} xs={12}>
                         <div className={classes.imageWrapper}>
                             <img
                                 className={classes.image}
@@ -103,9 +85,16 @@ const Content = ({days}) => {
                             />
                         </div>
                     </Grid>
-                    <Grid item md={6} xs={12} className={classes.textBox}>
+                    <Grid item md={8} xs={12} className={classes.textBox}>
                         <Typography variant='h3' gutterBottom>Boende</Typography>
-                        <Typography gutterBottom>Integer pharetra, felis quis sodales laoreet, ligula lectus suscipit enim, id consequat dolor turpis vestibulum massa. Cras interdum nunc at efficitur faucibus.</Typography>
+                        <Typography gutterBottom>Med utsikt över Storsjön och gröna ängar ligger Wikners i Persåsen. De är ett lite mindre familjeägt hotell och vandrarhem mitt bland Oviksfjällen. 
+Du bokar själv boende genom att kontakta Wikners i Persåsen, därmed väljer du själv hur länge du önskar bo på anläggningen. Samtliga gäster kommer ha möjlighet att bo på anläggningen där bröllopsfesten kommer hållas. För att detta ska vara möjligt så måste stugorna fyllas utefter hur många bäddar som finns där. Därför uppmanar vi er att para ihop er med personer ni känner och kan tänka er bo med så alla bäddar kan fyllas.
+
+Frukost ingår för boende i hotellrummen men kan också bokas för er som väljer annat boendealternativ än hotellrummen. För alla som önskar så planerar vi att äta gemensam frukost på söndag förmiddag innan många kommer åka hem. Önskar du att äta frukost med oss så är du varmt välkommen!
+
+Wikners i Persåsen är ett hotell och vandrarhem som är anslutet till Svenska turistföreningen (STF) och medlemmar kan boka boende med rabatterade priser.
+http://www.persasen.se/wordpress/boende/
+</Typography>
                         <Button component='div' color='primary' variant='contained' >
                             <Link href='#' className={classes.button}>
                                 <span className={classes.link}>Mer info</span>
@@ -115,8 +104,12 @@ const Content = ({days}) => {
                 </Grid>
                 <Grid container alignItems="center" justify="center" pt={2}>
                     <Grid item md={6} xs={12} className={classes.textBox}>
-                        <Typography variant='h3' gutterBottom>Kryka</Typography>
-                        <Typography gutterBottom>Integer pharetra, felis quis sodales laoreet, ligula lectus suscipit enim, id consequat dolor turpis vestibulum massa. Cras interdum nunc at efficitur faucibus.</Typography> 
+                        <Typography variant='h3' gutterBottom>kyrka</Typography>
+                        <Typography gutterBottom>
+                        Vigseln kommer ske i Myssjö kyrka med utsikt över Storsjön. Kyrkan är församlingskyrka i Oviken-Myssjö församling i Härnösands stift. Kyrkan byggdes troligen på 1300-talet. <br/>
+
+Vigseln kommer äga rum klockan 14:00 lördag 24/7 och kommer hållas av prästen Thomas Karlsson. Thomas är hemmahörande i Onsala där Malcolm kommer ifrån och är vän till familjen.
+                        </Typography> 
                         <Button component='div' color='primary' variant='contained' >
                             <Link href='#' className={classes.button}>
                                 <span className={classes.link}>Mer info</span>
@@ -132,7 +125,7 @@ const Content = ({days}) => {
                         </div>
                     </Grid>
                 </Grid>
-            </Box>
+            </Box> */}
 
         </Container>
     );
