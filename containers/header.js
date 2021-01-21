@@ -12,15 +12,15 @@ import ListItem from '@material-ui/core/ListItem';
 
 const links = [
     { to: '/', label: 'Hem' },
-    { to: '/spex', label: 'Tal/Spex' },
     { to: '/osa', label: 'OSA' },
+    { to: '/spex', label: 'Tal/Spex' },
 ];
 
 const useStyles = makeStyles((theme) => ({
     root: {},
     menuButton: {
         marginRight: theme.spacing(2),
-        color:'white'
+        color: 'white',
     },
     toolbar: {
         display: 'flex',
@@ -35,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
             },
         },
     },
-    icon : {
-        color:theme.palette.common.white
-            }
+    icon: {
+        color: theme.palette.common.white,
+    },
 }));
 
 export default function Header() {
@@ -64,9 +64,7 @@ export default function Header() {
                         onClick={toggleDrawer(true)}
                         edge='end'
                         aria-label='menu'
-                        className={classes.icon}
-                        >
-
+                        className={classes.icon}>
                         <MenuIcon />
                     </IconButton>
                     <Drawer

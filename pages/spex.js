@@ -15,20 +15,21 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         background: theme.palette.primary.main,
-        height: '100vh',
+        minHeight: '100vh',
         display: 'flex',
-        justifyContent: 'center',
         alignContent: 'center',
         flexDirection: 'column',
-        padding: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
             padding: theme.spacing(10),
         },
     },
     wrapper: {
         padding: theme.spacing(2),
+        paddingTop: theme.spacing(4),
+        marginTop: theme.spacing(8),
         [theme.breakpoints.up('sm')]: {
-            padding: theme.spacing(20),
+            padding: theme.spacing(8),
+            marginTop: theme.spacing(0),
         },
     },
     button: {
@@ -47,7 +48,7 @@ const Spex = (props) => {
 
     return (
         <div className={classes.root}>
-            <Container>
+            <Container maxWidth='md'>
                 <Box>
                     <Paper>
                         <Box
@@ -71,7 +72,8 @@ const Spex = (props) => {
                                 hålla i själva middagen och planera in
                                 eventuella tal och spex och dem ni skall vända
                                 er till med frågor om detta. För att komma i
-                                kontakt med dem mailar ni{' '}
+                                kontakt med dem mailar ni genom att klicka på
+                                knappen här.
                             </Typography>
                             <Button
                                 component='div'

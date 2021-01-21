@@ -22,15 +22,17 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         alignContent: 'center',
         flexDirection: 'column',
-        padding: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
             padding: theme.spacing(10),
         },
     },
     wrapper: {
         padding: theme.spacing(2),
+        paddingTop: theme.spacing(4),
+        marginTop: theme.spacing(8),
         [theme.breakpoints.up('sm')]: {
-            padding: theme.spacing(20),
+            padding: theme.spacing(8),
+            marginTop: theme.spacing(0),
         },
     },
     button: {
@@ -68,7 +70,7 @@ const Osa = (props) => {
 
     return (
         <div className={classes.root}>
-            <Container>
+            <Container maxWidth='md'>
                 <Box>
                     <Paper>
                         <Box
@@ -157,7 +159,7 @@ const Osa = (props) => {
                                 }
                             />
 
-                            <Box pt={1} width='100%'>
+                            <Box pt={1} width='100%' textAlign='center'>
                                 {hasSubmitted ? (
                                     <Typography gutterBottom>
                                         Du har lagt till dig!
