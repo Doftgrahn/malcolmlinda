@@ -48,7 +48,7 @@ const defaultValues = {
     name: '',
     specific: '',
     drinkingPreferences: '',
-    withAlcohol: '0',
+    withAlcohol: null,
 };
 
 const Osa = () => {
