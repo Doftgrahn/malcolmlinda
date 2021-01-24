@@ -19,8 +19,6 @@ function MyApp({ Component, pageProps }) {
         }
     }, []);
 
-    console.log('page props', pageProps)
-
     return (
         <ReactQueryCacheProvider queryCache={queryCache}>
             <ThemeProvider theme={theme}>
@@ -34,6 +32,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
-
-    
-

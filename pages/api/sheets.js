@@ -29,7 +29,6 @@ const appendSpreadsheet = async (row) => {
 
         const sheet = doc.sheetsById[SHEET_ID];
         await sheet.addRow(row);
-        console.log('Post');
     } catch (e) {
         console.error('Error: ', e);
     }
