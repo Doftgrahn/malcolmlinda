@@ -45,7 +45,8 @@ export default async (req, res) => {
             Allergies: data.alllergies,
             SpecificWishes: data.specific,
             IsAttending: data.isAttending,
-            AlcoholOrNot: data.drinkingPreferences,
+            DrinkingPreferences: data.drinkingPreferences,
+            WithAlcohol: data.withAlcohol,
         };
         await appendSpreadsheet(newRow);
         res.send('sucess');

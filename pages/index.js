@@ -18,7 +18,6 @@ export default function Home({ days }) {
     return (
         <div>
             <Head>
-                <title>Linda & Malcolm</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <Header />

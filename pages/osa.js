@@ -47,25 +47,30 @@ const defaultValues = {
     isAttending: '1',
     name: '',
     specific: '',
-    drinkingPreferences: null,
+    drinkingPreferences: '',
+    withAlcohol: '0',
 };
 
-const Osa = (props) => {
-    const [hasSubmitted, setHasSubmitted] = useState(false);
+const Osa = () => {
     const classes = useStyles();
+    const [hasSubmitted, setHasSubmitted] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
-    const { register, handleSubmit, errors, control } = useForm({
+    const { register, handleSubmit, errors, control, reset } = useForm({
         defaultValues,
     });
 
     const onSubmit = async (data) => {
-        console.log('data', data);
+        setIsLoading(true);
         try {
-            await axios.post('api/sheets', data);
-            setHasSubmitted(true);
+            await axios.post('/api/sheets', data);
         } catch (e) {
             console.error(e);
+        } finally {
+            setIsLoading(false);
+            setHasSubmitted(true);
         }
+        reset(defaultValues);
     };
 
     return (
@@ -99,6 +104,7 @@ const Osa = (props) => {
                                 variant='outlined'
                             />
                             <Controller
+                                inputRef={register({ required: true })}
                                 name='isAttending'
                                 control={control}
                                 as={
@@ -121,7 +127,7 @@ const Osa = (props) => {
                                 name='alllergies'
                                 margin='normal'
                                 fullWidth
-                                label='allergier'
+                                label='Allergier?'
                                 variant='outlined'
                             />
                             <TextField
@@ -129,7 +135,7 @@ const Osa = (props) => {
                                 name='specific'
                                 margin='normal'
                                 fullWidth
-                                label='specifika önskemål'
+                                label='Specifika önskemål'
                                 variant='outlined'
                             />
                             <TextField
@@ -141,10 +147,10 @@ const Osa = (props) => {
                                 variant='outlined'
                             />
                             <Controller
-                                name='drinkingPreferences'
+                                name='withAlcohol'
                                 control={control}
                                 as={
-                                    <RadioGroup aria-label='attending'>
+                                    <RadioGroup aria-label='withAlcohol'>
                                         <FormControlLabel
                                             value='1'
                                             control={<Radio />}
@@ -162,7 +168,9 @@ const Osa = (props) => {
                             <Box pt={1} width='100%' textAlign='center'>
                                 {hasSubmitted ? (
                                     <Typography gutterBottom>
-                                        Du har lagt till dig!
+                                        {isLoading
+                                            ? 'Laddar'
+                                            : 'Du har nu svarat, behöver ändra något hör av dig!'}
                                     </Typography>
                                 ) : (
                                     <Button
@@ -172,7 +180,7 @@ const Osa = (props) => {
                                         type='submit'
                                         variant='contained'
                                         color='secondary'>
-                                        Skicka
+                                        Svara
                                     </Button>
                                 )}
                             </Box>
