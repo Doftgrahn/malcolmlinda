@@ -76,7 +76,7 @@ const Osa = () => {
     return (
         <div className={classes.root}>
             <Container maxWidth='md'>
-                <Box>
+                <Box mb={6}>
                     <Paper>
                         <Box
                             className={classes.wrapper}

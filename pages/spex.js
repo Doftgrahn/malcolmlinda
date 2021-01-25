@@ -49,7 +49,7 @@ const Spex = (props) => {
     return (
         <div className={classes.root}>
             <Container maxWidth='md'>
-                <Box>
+                <Box mb={6}>
                     <Paper>
                         <Box
                             className={classes.wrapper}
@@ -76,18 +76,26 @@ const Spex = (props) => {
                                 knappen här.
                             </Typography>
                             <Button
+                                href='mailto:toastlindamalcolm@gmail.com'
+                                target='_blank'
+                                className={classes.white}
+                                mt={2}
                                 component='div'
                                 color='secondary'
                                 className={classes.button}
+                                component={Link}
                                 variant='contained'>
-                                <Link
-                                    href='mailto:toastlindamalcolm@gmail.com'
-                                    target='_blank'
-                                    className={classes.white}
-                                    mt={2}>
-                                    Anmäl ditt spex eller tal här.
-                                </Link>
+                                Anmäl ditt spex eller tal här.
                             </Button>
+                            <Box mt={6}>
+                                <Typography>
+                                    Eller kopiera denna mailadress!
+                                </Typography>
+
+                                <Typography>
+                                    toastlindamalcolm@gmail.com
+                                </Typography>
+                            </Box>
                         </Box>
                     </Paper>
                 </Box>
