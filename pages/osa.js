@@ -9,10 +9,19 @@ import {
     FormControlLabel,
     Radio,
 } from '@material-ui/core';
+import Slide from '@material-ui/core/Slide';
+
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
+
 import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { makeStyles } from '@material-ui/core/styles';
+
+function Alert(props) {
+    return <MuiAlert elevation={6} variant='filled' {...props} />;
+}
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -56,9 +65,20 @@ const Osa = () => {
     const [hasSubmitted, setHasSubmitted] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
+    const [isError, setIsError] = useState(false);
+
     const { register, handleSubmit, errors, control, reset } = useForm({
         defaultValues,
     });
+
+    const handleClose = (_event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+
+        setHasSubmitted(false);
+        setIsError(false);
+    };
 
     const onSubmit = async (data) => {
         setIsLoading(true);
@@ -66,6 +86,7 @@ const Osa = () => {
             await axios.post('/api/sheets', data);
         } catch (e) {
             console.error(e);
+            setIsError(true);
         } finally {
             setIsLoading(false);
             setHasSubmitted(true);
@@ -104,7 +125,6 @@ const Osa = () => {
                                 variant='outlined'
                             />
                             <Controller
-                                inputRef={register({ required: true })}
                                 name='isAttending'
                                 control={control}
                                 as={
@@ -187,6 +207,16 @@ const Osa = () => {
                         </Box>
                     </Paper>
                 </Box>
+                <Snackbar
+                    open={hasSubmitted}
+                    autoHideDuration={6000}
+                    onClose={handleClose}>
+                    <Alert onClose={handleClose} severity='success'>
+                        {isError
+                            ? 'Oj, något gick fel, testa igen!'
+                            : 'Du har nu svarat, behöver ändra något hör av dig!'}
+                    </Alert>
+                </Snackbar>
             </Container>
         </div>
     );
