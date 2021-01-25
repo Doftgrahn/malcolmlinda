@@ -80,7 +80,6 @@ const Spex = (props) => {
                                 target='_blank'
                                 className={classes.white}
                                 mt={2}
-                                component='div'
                                 color='secondary'
                                 className={classes.button}
                                 component={Link}
