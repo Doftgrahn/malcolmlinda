@@ -9,7 +9,6 @@ import {
     FormControlLabel,
     Radio,
 } from '@material-ui/core';
-import Slide from '@material-ui/core/Slide';
 
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
@@ -211,7 +210,9 @@ const Osa = () => {
                     open={hasSubmitted}
                     autoHideDuration={6000}
                     onClose={handleClose}>
-                    <Alert onClose={handleClose} severity='success'>
+                    <Alert
+                        onClose={handleClose}
+                        severity={isError ? 'error' : 'success'}>
                         {isError
                             ? 'Oj, något gick fel, testa igen!'
                             : 'Du har nu svarat, behöver ändra något hör av dig!'}
