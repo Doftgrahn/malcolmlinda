@@ -9,8 +9,6 @@ import { Link, Typography, Container } from '@material-ui/core';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-import { lorem } from '../utils/lorem';
-
 const Accordion = withStyles({
     root: {
         boxShadow: 'none',
@@ -82,6 +80,9 @@ const useStyles = makeStyles((theme) => ({
         background: theme.palette.primary.lighter,
         paddingTop: '20px',
         paddingBottom: '20px',
+    },
+    link: {
+        textDecoration: 'underline',
     },
 }));
 
@@ -236,6 +237,7 @@ const faq = [
                 vända er till med frågor om detta. För att komma i kontakt med
                 dem mailar ni{' '}
                 <Link
+                    underline='always'
                     href='mailto:toastlindamalcolm@gmail.com'
                     color='inherit'
                     underline='always'>
@@ -245,7 +247,7 @@ const faq = [
         ),
     },
     {
-        question: 'Kontakt uppgifter till oss',
+        question: 'Våra Kontaktuppgifter',
         answer: (
             <Typography>
                 Vill ni kontakta Linda eller Malcolm görs detta på enklast
@@ -254,16 +256,28 @@ const faq = [
                 <br />
                 Linda Antonsson
                 <br />
-                070 615 43 13
+                <Link underline='always' href='+46706154313'>
+                    0706-154313
+                </Link>
                 <br />
-                linda_antonsson91@hotmail.com
+                <Link
+                    underline='always'
+                    href='mailto:linda_antonsson91@hotmail.com'>
+                    linda_antonsson91@hotmail.com
+                </Link>
                 <br />
                 <br />
                 Malcolm Hargelius
                 <br />
-                076 811 44 56
+                <Link underline='always' href='tel:+460768114456'>
+                    0768-114456
+                </Link>
                 <br />
-                malcolm.hargelius@gmail.com
+                <Link
+                    underline='always'
+                    href='mailto:malcolm.hargelius@gmail.com'>
+                    malcolm.hargelius@gmail.com
+                </Link>
                 <br />
                 <br />
                 Sturegatan 1<br />
