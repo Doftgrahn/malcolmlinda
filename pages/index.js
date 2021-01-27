@@ -19,7 +19,7 @@ export default function Home({ days }) {
         <div>
             <Head>
                 <link rel='icon' href='/favicon.ico' />
-                <title>Linda och Malcom, 24 Juli 2021</title>
+                <title>Linda och Malcolm, 24 Juli 2021</title>
             </Head>
             <Header />
             <Hero />
