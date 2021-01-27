@@ -48,14 +48,13 @@ export default function Hero() {
 
     return (
         <Box className={classes.root}>
-            <img
-                className={classes.image}
-                src="/images/bg1.jpg"
-            />
+            <img className={classes.image} src='/images/bg1.jpg' />
             <Box className={classes.containertest}>
-                <Typography variant="h5" gutterBottom>24 Juli, 2021</Typography>
-                <Typography variant='h1' align="center">
-                    Linda och Malcom
+                <Typography variant='h5' gutterBottom>
+                    24 Juli, 2021
+                </Typography>
+                <Typography variant='h1' align='center'>
+                    Linda och Malcolm
                 </Typography>
                 <Button component='div' color='secondary' variant='contained'>
                     <Link href='/osa'>

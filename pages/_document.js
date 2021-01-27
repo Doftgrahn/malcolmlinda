@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
                     />
                     <meta
                         property='og:title'
-                        content='Linda och Malcom, 24 Juli 2021'
+                        content='Linda och Malcolm, 24 Juli 2021'
                     />
                     <meta
                         property='og:description'
