@@ -7,14 +7,7 @@ import Content from '../containers/content';
 import Spotify from '../containers/spotify';
 import Footer from '../containers/footer';
 
-const useStyles = makeStyles({
-    root: {
-        minHeight: '100vh',
-    },
-});
-
 export default function Home({ days }) {
-    const classes = useStyles();
     return (
         <div>
             <Head>

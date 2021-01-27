@@ -162,7 +162,7 @@ const Osa = () => {
                                 name='drinkingPreferences'
                                 margin='normal'
                                 fullWidth
-                                label='Dryckes preferenser'
+                                label='Dryckespreferenser'
                                 variant='outlined'
                             />
                             <Controller
