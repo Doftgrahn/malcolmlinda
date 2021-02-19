@@ -141,7 +141,12 @@ const faq = [
                 <br />
                 Wikners i Persåsen är ett hotell och vandrarhem som är anslutet
                 till Svenska turistföreningen (STF) och medlemmar kan boka
-                boende med rabatterade priser.{' '}
+                boende med rabatterade priser. <br /> <br />
+                Vi har reserverat hela anläggningen och därmed kan ni inte boka
+                boende genom Wikners webbokning. Bokning görs istället genom att
+                kontakta dem direkt på mail eller telefon. Var god att se
+                kontaktuppgifter på Wikners hemsida.
+                <br /> <br />
                 <Link
                     href='http://www.persasen.se/wordpress/boende/'
                     color='inherit'
@@ -226,16 +231,40 @@ const faq = [
         answer: (
             <Typography>
                 Ansvariga för middagen festen är vår toastmaster och toastmadame
-                Erik Jönsson och Hanna Molin. <br />
-                Erik är en gammal barndomsvän till Malcolm som för närvarande
-                bor och jobbar i Oslo. Hanna är som Linda från Östersund och de
-                har känt varandra sedan högstadiet.
+                Erik Jönsson och Hanna Molin. Erik är en gammal barndomsvän till
+                Malcolm som för närvarande bor och jobbar i Oslo. Hanna är som
+                Linda från Östersund och de har känt varandra sedan högstadiet.
                 <br />
                 <br />
                 Det är toastmastern/toastmadamen som kommer hålla i själva
                 middagen och planera in eventuella tal och spex och dem ni skall
                 vända er till med frågor om detta. För att komma i kontakt med
-                dem mailar ni{' '}
+                dem mailar ni toastlindamalcolm@gmail.com.
+                <br />
+                <br />
+                <strong>Information om anmälan</strong> När ni tar kontakt
+                inkludera gärna lite av följande information i e-posten:
+                Ungefärlig tid på talet.
+                <br /> Vi rekommenderar att du siktar på att hålla inom 3-5 min
+                (men kan göra undantag) Relation till brudparet Din
+                kontaktinformation (namn, mail och telefonnummer) Eventuell
+                rekvisita (projektor, musik o.s.v.) <br /> När vi har mottagit
+                din mail så kommer vi att ta kontakt med dig/er för att gå
+                igenom ytterligare detaljer.
+                <br />
+                <br />
+                <strong>
+                    När bör du anmäla ditt tal? <br /> <br />
+                    Februari:
+                </strong>{' '}
+                Om du inte vet alla detaljer runt talet / framträdandet redan
+                nu, men vet att du önskar att framföra något - så skicka gärna
+                en kort notis om detta till oss i samband med att du OSA:r till
+                bröllopet i slutet av februari.
+                <br /> <br />
+                <strong>Maj:</strong> En mer utförlig anmälan önskas senast i
+                början av maj för vi i toastmasterparet ska få ihop schemat för
+                kvällen och säkra att du har allt du behöver för ditt tal.
                 <Link
                     underline='always'
                     href='mailto:toastlindamalcolm@gmail.com'
