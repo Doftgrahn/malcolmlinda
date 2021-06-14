@@ -11,6 +11,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import Countdown from '../components/coundown';
 
+console.log('fskfjs');
 const useStyles = makeStyles((theme) => ({
     imageWrapper: {
         width: '100%',
