@@ -11,7 +11,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import Countdown from '../components/coundown';
 
-console.log('fskfjs');
 const useStyles = makeStyles((theme) => ({
     imageWrapper: {
         width: '100%',
@@ -44,17 +43,34 @@ const Content = ({ days }) => {
         <Container maxWidth='md'>
             <Box pt={8}>
                 <Typography align='center' variant='h2' gutterBottom>
-                    Kul att ni hittade hit!
+                    Hej alla gäster!
                 </Typography>
                 <Typography align='center'>
-                    Välkomna till Hargantsson.se!
+                    Här kommer en uppdatering kring sommarens bröllopsplaner. I
+                    och med lättade restriktioner så har vi beslutat att
+                    bröllopet kommer att bli av! HURRA!
                     <br />
-                    Sidan som ger Dig rykande het information om Jämtlands och
-                    möjligtvis Sveriges största happening 2021! Linda och
-                    Malcolms bröl-lopp!
+                    Vigseln kommer som planerat hållas i Myssjö kyrka och vår
+                    förhoppning är att samtliga gäster kommer kunna medverka
+                    där. Om detta detta inte är möjligt kommer vi att återkomma
+                    med mer information. Därmed ber vi er att med jämna
+                    mellanrum gå in på hemsidan och uppdatera er med den nyaste
+                    informationen.
                     <br />
-                    Här kommer du hitta information som om hur, när, var Malcolm
-                    får sin Linda eller om Linda får sin Malcolm.
+                    Vi har beslutat oss för att ändra planerna för middagen och
+                    bröllopsfesten. För att alla gäster ska kunna medverka så
+                    kommer middagen och festen hållas i Hovermo där vi kommer
+                    att ha ett stort partytält. Tältet kommer att vara rymligt
+                    med bra ventilation. Hovermo ligger i närheten av Wikners i
+                    Persåsen och därmed blir det ingen förändring gällande
+                    bokningar av boende. Vi håller på att kolla på lösningar
+                    kring transport mellan Wikners och Hovermo och ber att få
+                    återkomma kring detta.
+                    <br />
+                    Som sagt kommer vi återkomma med fler detaljer framöver, men
+                    det viktigaste är att ni vet att bröllopet kommer bli av. Om
+                    några vet med sig att ni inte kommer vilja medverka ber vi
+                    er kontakta Linda eller Malcolm med erat avböjande.
                 </Typography>
             </Box>
 
