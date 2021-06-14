@@ -49,7 +49,7 @@ const Content = ({ days }) => {
                     Här kommer en uppdatering kring sommarens bröllopsplaner. I
                     och med lättade restriktioner så har vi beslutat att
                     bröllopet kommer att bli av! HURRA!
-                    <br />
+                    <br /> <br />
                     Vigseln kommer som planerat hållas i Myssjö kyrka och vår
                     förhoppning är att samtliga gäster kommer kunna medverka
                     där. Om detta detta inte är möjligt kommer vi att återkomma
@@ -61,11 +61,12 @@ const Content = ({ days }) => {
                     bröllopsfesten. För att alla gäster ska kunna medverka så
                     kommer middagen och festen hållas i Hovermo där vi kommer
                     att ha ett stort partytält. Tältet kommer att vara rymligt
-                    med bra ventilation. Hovermo ligger i närheten av Wikners i
-                    Persåsen och därmed blir det ingen förändring gällande
-                    bokningar av boende. Vi håller på att kolla på lösningar
-                    kring transport mellan Wikners och Hovermo och ber att få
-                    återkomma kring detta.
+                    med bra ventilation. <br />
+                    Hovermo ligger i närheten av Wikners i Persåsen och därmed
+                    blir det ingen förändring gällande bokningar av boende. Vi
+                    håller på att kolla på lösningar kring transport mellan
+                    Wikners och Hovermo och ber att få återkomma kring detta.
+                    <br />
                     <br />
                     Som sagt kommer vi återkomma med fler detaljer framöver, men
                     det viktigaste är att ni vet att bröllopet kommer bli av. Om
