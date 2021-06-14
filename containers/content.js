@@ -96,11 +96,12 @@ const Content = ({ days }) => {
                     Festligt
                 </Typography>
                 <Typography align='center'>
-                    Bröllopsfesten kommer hållas på Wikners i Persåsen. Där
-                    kommer vi bjuda på fördrink följt av bröllopsmiddag med
-                    jämtländska råvaror. Vi kommer bjuda på dryck till middagen
-                    och en bar kommer även finnas tillgänglig under kvällen där
-                    den som önskar kommer kunna köpa ytterligare förfriskningar.
+                    Bröllopsfesten kommer hållas i ett stort partytält i
+                    Hovermo. Där kommer vi bjuda på fördrink följt av
+                    bröllopsmiddag med jämtländska råvaror. Vi kommer bjuda på
+                    dryck till middagen och en bar kommer även finnas
+                    tillgänglig under kvällen där den som önskar kommer kunna
+                    köpa ytterligare förfriskningar.
                     <br />
                     Om du önskar att hålla tal/spex så ska detta anmälas till
                     toastmaster Erik Jönsson och toastmadame Hanna Molin. Du når
