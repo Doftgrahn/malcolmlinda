@@ -89,7 +89,53 @@ const useStyles = makeStyles((theme) => ({
 const faq = [
     {
         question: 'Schema',
-        answer: <Typography>Mer info kommer snart!</Typography>,
+        answer: <Typography>
+14:00 <br/>
+ Vigseln börjar i Myssjö kyrka. Det tar ca 25 minuter att köra till Myssjö kyrka om man utgår från Wikners i Persåsen. Om ni inte hittar Myssjö kyrka i gpsen så kan ni ställa den på Myssjö så kommer ni hitta 🙂 
+<br/>
+<br/>
+
+15:00 <br/>
+
+Vigseln beräknas ta ca en timme och kommer därmed vara färdig runt kl 15.
+<br/>
+<br/>
+
+16:00 <br/>
+Transporten från Wikners gå till själva festplatsen i Hovermo. Tre transporter kommer senare under kvällen finnas så ni kan transportera er tillbaka till Wikners. Ni väljer själva vilken av de tiderna ni väljer att åka. 
+<br/>
+<br/>
+
+16:45
+ <br/>
+ Fördrinken börjar i Hovermo.
+<br/>
+<br/>
+
+17:50 <br/>
+ Förrätten serveras och bröllopsmiddagen startar.
+ <br/>
+Middagen beräknas vara färdig runt kl 22:45.
+<br/>
+<br/>
+
+23:30/23:45 <br/>
+ Första busstransporten går tillbaka till Wikners 
+<br/>
+<br/>
+
+01:00 <br/>
+ Andra busstransporten går till Wikners
+<br/>
+<br/>
+
+03:00 <br/>
+ Festen avslutas och sista transporten går till Wikners.
+<br/>
+<br/>
+
+Tiderna för bussen är ungefärliga.
+        </Typography>,
     },
     {
         question: 'Klädkod',
