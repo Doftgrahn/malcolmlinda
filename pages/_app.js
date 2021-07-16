@@ -20,6 +20,9 @@ function MyApp({ Component, pageProps }) {
         }
     }, []);
 
+
+
+    
     return (
         <ReactQueryCacheProvider queryCache={queryCache}>
             <ThemeProvider theme={theme}>
