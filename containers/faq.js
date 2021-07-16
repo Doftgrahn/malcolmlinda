@@ -81,7 +81,9 @@ const useStyles = makeStyles((theme) => ({
         paddingTop: '20px',
         paddingBottom: '20px',
         color: '#fff',
-
+        '&:active': {
+            background: theme.palette.primary.dark,
+        },
     },
     link: {
         textDecoration: 'underline',
@@ -104,7 +106,7 @@ Vigseln beräknas ta ca en timme och kommer därmed vara färdig runt kl 15.
 <br/>
 <br/>
 
-<strong>16:00</strong> <br/>
+<strong>16:30</strong> <br/>
 Transporten från Wikners gå till själva festplatsen i Hovermo. Tre transporter kommer senare under kvällen finnas så ni kan transportera er tillbaka till Wikners. Ni väljer själva vilken av de tiderna ni väljer att åka. 
 <br/>
 <br/>

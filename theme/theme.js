@@ -5,7 +5,7 @@ export default createMuiTheme({
         common: { white: '#e7e1dd', black: '#eeeee' },
         primary: {
             main: '#4f5747',
-            lighter: 'rgb(150 155 144)',
+            lighter: 'rgb(189 195 180)',
         },
         secondary: {
             main: '#BC9087',

@@ -34,6 +34,13 @@ const useStyles = makeStyles((theme) => ({
         color: 'white',
         textDecoration: 'none',
     },
+    dots: {
+        position: 'absolute',
+    },
+    charWithDots: {
+        position: 'relative',
+        display: 'inline',
+    }
 }));
 
 const Content = ({ days }) => {
