@@ -90,52 +90,53 @@ const faq = [
     {
         question: 'Schema',
         answer: <Typography>
-14:00 <br/>
+<strong>14:00</strong> <br/>
  Vigseln börjar i Myssjö kyrka. Det tar ca 25 minuter att köra till Myssjö kyrka om man utgår från Wikners i Persåsen. Om ni inte hittar Myssjö kyrka i gpsen så kan ni ställa den på Myssjö så kommer ni hitta 🙂 
 <br/>
 <br/>
 
-15:00 <br/>
+<strong>15:00</strong> <br/>
 
 Vigseln beräknas ta ca en timme och kommer därmed vara färdig runt kl 15.
 <br/>
 <br/>
 
-16:00 <br/>
+<strong>16:00</strong> <br/>
 Transporten från Wikners gå till själva festplatsen i Hovermo. Tre transporter kommer senare under kvällen finnas så ni kan transportera er tillbaka till Wikners. Ni väljer själva vilken av de tiderna ni väljer att åka. 
 <br/>
 <br/>
 
-16:45
+<strong> 16:45 </strong>
  <br/>
  Fördrinken börjar i Hovermo.
 <br/>
 <br/>
 
-17:50 <br/>
+<strong>17:50 </strong> <br/>
  Förrätten serveras och bröllopsmiddagen startar.
  <br/>
 Middagen beräknas vara färdig runt kl 22:45.
 <br/>
 <br/>
 
-23:30/23:45 <br/>
+<strong>23:30/23:45</strong> <br/>
  Första busstransporten går tillbaka till Wikners 
 <br/>
 <br/>
 
-01:00 <br/>
+<strong>01:00</strong> <br/>
  Andra busstransporten går till Wikners
 <br/>
 <br/>
 
-03:00 <br/>
+<strong>03:00</strong> <br/>
  Festen avslutas och sista transporten går till Wikners.
 <br/>
 <br/>
 
-Tiderna för bussen är ungefärliga.
+<strong>Tiderna för bussen är ungefärliga.</strong>
         </Typography>,
+isExpanded:true
     },
     {
         question: 'Klädkod',
@@ -366,7 +367,7 @@ const Faq = () => {
     const classes = useStyles();
 
     const accordium = faq.map((item, key) => (
-        <Accordion key={key}>
+        <Accordion expanded={item.isExpanded} key={key}>
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon className={classes.icon} />}>
                 <Container maxWidth='md' disableGutters>
