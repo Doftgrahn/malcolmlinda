@@ -367,7 +367,7 @@ const Faq = () => {
     const classes = useStyles();
 
     const accordium = faq.map((item, key) => (
-        <Accordion expanded={item.isExpanded} key={key}>
+        <Accordion disabled={item.isExpanded} expanded={item.isExpanded} key={key}>
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon className={classes.icon} />}>
                 <Container maxWidth='md' disableGutters>
