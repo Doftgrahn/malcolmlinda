@@ -77,9 +77,11 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.common.white,
     },
     header: {
-        background: theme.palette.primary.lighter,
+        background: theme.palette.primary.dark,
         paddingTop: '20px',
         paddingBottom: '20px',
+        color: '#fff',
+
     },
     link: {
         textDecoration: 'underline',
@@ -88,7 +90,8 @@ const useStyles = makeStyles((theme) => ({
 
 const faq = [
     {
-        question: 'Schema',
+        htmlId: "schema",
+        question: 'Dagens program',
         answer: <Typography>
 <strong>14:00</strong> <br/>
  Vigseln börjar i Myssjö kyrka. Det tar ca 25 minuter att köra till Myssjö kyrka om man utgår från Wikners i Persåsen. Om ni inte hittar Myssjö kyrka i gpsen så kan ni ställa den på Myssjö så kommer ni hitta 🙂 
@@ -367,7 +370,7 @@ const Faq = () => {
     const classes = useStyles();
 
     const accordium = faq.map((item, key) => (
-        <Accordion disabled={item.isExpanded} expanded={item.isExpanded} key={key}>
+        <Accordion expanded={item.isExpanded} key={key} id={item.htmlId}>
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon className={classes.icon} />}>
                 <Container maxWidth='md' disableGutters>

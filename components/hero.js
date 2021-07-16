@@ -57,8 +57,8 @@ export default function Hero() {
                     Linda och Malcolm
                 </Typography>
                 <Button component='div' color='secondary' variant='contained'>
-                    <Link href='/osa'>
-                        <a className={classes.link}>OSA</a>
+                    <Link href='#schema'>
+                        <a className={classes.link}>Dagens program</a>
                     </Link>
                 </Button>
             </Box>
